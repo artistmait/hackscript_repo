@@ -2,6 +2,7 @@
 import './App.css'
 import { useEffect, useState } from "react";
 import axios from "axios";
+import LandingPage from '../components/LandingPage';
 
 function App() {
   const [data, setData] = useState("");
@@ -15,9 +16,8 @@ function App() {
 
   return (
     <>
-    <h1>QA Supervisor Agent</h1>
-    <p>{data}</p>
-      
+    <LandingPage></LandingPage>
+   
     </>
   )
 }
